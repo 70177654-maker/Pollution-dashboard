@@ -306,7 +306,7 @@ details[data-testid="stExpander"] > summary > span{
 # ── DATA ─────────────────────────────────────────────────────────
 @st.cache_data
 def get_data():
-    return load_data("data/plastics.csv")
+    return load_data()  # Uses absolute path from filters.py
 
 @st.cache_data
 def get_cards():

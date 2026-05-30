@@ -4,10 +4,16 @@ filters.py - Filter and data processing functions for the Plastics Dashboard
 
 import pandas as pd
 import numpy as np
+import os
 
 
-def load_data(filepath: str = "data/plastics.csv") -> pd.DataFrame:
+def load_data(filepath: str = None) -> pd.DataFrame:
     """Load and clean the plastics dataset."""
+    if filepath is None:
+        # Use absolute path based on this script's location
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        filepath = os.path.join(script_dir, "data", "plastics.csv")
+    
     df = pd.read_csv(filepath)
 
     # Fill numeric NaNs with 0
