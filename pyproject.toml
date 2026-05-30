@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plastic-pollution-dashboard"
+version = "1.0.0"
+description = "Interactive Streamlit dashboard analyzing global plastic waste from Break Free From Plastic audit data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Ali Hassan Sherazi", email = "student@example.com"}
+]
+keywords = ["streamlit", "data-visualization", "pollution", "plastics", "dashboard"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "streamlit>=1.30.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/plastic-pollution-dashboard"
+Repository = "https://github.com/yourusername/plastic-pollution-dashboard"
+Issues = "https://github.com/yourusername/plastic-pollution-dashboard/issues"
